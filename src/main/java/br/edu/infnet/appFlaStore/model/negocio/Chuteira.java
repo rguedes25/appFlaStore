@@ -29,7 +29,7 @@ public class Chuteira extends Produto {
 		
 		if(medida =< 36) {
 			return this.getValor()
-		} else
+		}
 
 		return this.getValor() * 0.35f;
 	}
@@ -39,7 +39,7 @@ public class Chuteira extends Produto {
 	}
 	public void setMedida(int medida) throws MedidaInvalidaException {
 		
-		if(medida < 32 || > 46 ) {
+		if(medida < 32 || medida > 46 ) {
 			throw new MedidaInvalidaException("Medida inválida.");
 		}
 		

@@ -42,9 +42,9 @@ public class Bola extends Produto {
 	public string getTipo() {
 		return tipo;
 	}
-	public void setTipo(string tipobola) throws TipoBolaException {
+	public void setTipo(string tipo) throws TipoBolaException {
 		
-		if(!tipo.equals("Quadra") || !tipo.equals("Campo") || !tipo.equals("Society")) {
+		if(!tipo.equalsIgnoreCase("Quadra") || !tipo.equalsIgnoreCase("Campo") || !tipo.equalsIgnoreCase("Society")) {
 			throw new TipoBolaInvalidoException("Tipo inválido.");
 		}
 		
